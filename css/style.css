@@ -1,0 +1,133 @@
+ section {
+   display: none;
+ }
+
+ section:target {
+   display: block;
+   background-color: #a236cc;
+   /* Light green */
+ }
+
+ p::first-letter {
+   font-size: 200%;
+   color: #100e13;
+ }
+
+
+ h2 {
+
+   color: rgb(211, 211, 208);
+ }
+
+
+ /*GENERAL SIBLING SELECTOR. Seçilən eleməntə ən yaxın qonşu elementləri seçmək üçün istifadə olunur*/
+
+
+ h2+p {
+   color: rgb(228, 228, 225);
+
+ }
+
+ /*after: Seçilmiş elementdən əvvəl məzmun daxil edir*/
+
+ h2:after {
+   content: "😊";
+   margin-right: 15px;
+   font-size: 20px;
+ }
+
+ /*Ümumi olaraq elementə yaxın olanları seçmək üçün istifadə olunur*/
+
+
+ h3~p {
+   color: rgb(255, 0, 0);
+   font-style: italic;
+ }
+
+ /*befor: Seçilmiş elementdən əvvəl məzmun daxil edir*/
+
+ h3:before {
+   content: "😊";
+   margin-right: 15px;
+   font-size: 20px;
+ }
+
+ /* ul daxilinde besinci elementin rengini deyis */
+ ul li:nth-child(5) {
+   background: rgb(184, 173, 173);
+ }
+
+ /* ul daxilinde altinci elementin rengini deyis */
+ ul li:nth-child(6) {
+
+   background: rgb(137, 15, 236);
+ }
+
+ /* ul daxilinde yeddinci elementin rengini deyis */
+ ul li:nth-child(7) {
+   background: yellow;
+ }
+
+ /* ul daxilinde sekizinci elementin rengini deyis */
+ ul li:nth-child(8) {
+   background: rgb(223, 28, 197);
+ }
+
+ /*İstifadəçi onun üzərinə gəldikdə elementi seçir və stilləndirir*/
+
+
+ a:hover {
+   background-color: rgb(138, 23, 103);
+ }
+
+ .hide {
+   display: none;
+ }
+
+ .mybox:hover+.hide {
+   display: block;
+   color: rgb(47, 9, 182);
+ }
+
+ a {
+   color: #1c87c9;
+ }
+
+
+ /*active. Aktiv keçidi seçir və stilləndirir*/
+
+ a:active {
+   background-color: #8ebf42;
+   color: #eee;
+ }
+
+ /*tekrarlanan elementlerin sonuncunu secir*/
+
+ p:last-child {
+   background: #8313af;
+ }
+
+ /*focus: Fokuslu elementi seçir və stilləndirir*/
+
+ input:focus {
+   background-color: rgb(25, 197, 19);
+ }
+ /*bir çox elementlərə stil tətbiq etmek teleb olunan zaman elemenler secilir*/
+
+ h1, h2, h3 {
+ 
+  font-weight: normal;
+  letter-spacing: .6em;
+  margin-bottom: 1em;
+  text-decoration-color: rgb(229, 231, 231);
+  text-transform: uppercase;
+
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    }
+  
